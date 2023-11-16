@@ -1,4 +1,4 @@
-/* Add your CSS styles here */
+
 body {
   display: flex;
   justify-content: center;
@@ -44,7 +44,6 @@ ul {
   display: flex;
   list-style: none;
   padding: 0;
-  /* display: flex; */
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -68,9 +67,7 @@ li:hover {
 .github-link {
   margin-top: 10px;
 }
-/* Portfolio.css */
 
-/* Basic styles */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -81,13 +78,12 @@ li:hover {
   margin-bottom: 40px;
 }
 
-/* Styling for projects */
 .projects-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 20px;
-  max-height: 600px; /* Set the maximum height for overflow */
-  overflow-y: auto; /* Enable vertical scrolling for overflow */
+  max-height: 600px;
+  overflow-y: auto;
 }
 
 .project {
@@ -97,7 +93,7 @@ li:hover {
   background-color: #f0f0f0;
 }
 
-/* Placeholder for demo */
+
 .demo-placeholder iframe  {
   height: 200px;
   width: 450px;
@@ -107,7 +103,6 @@ li:hover {
   line-height: 200px;
   text-align: center;
   border-radius: 5px;
-  /* Add styles for the demo placeholder (e.g., set width, height, background color) */
 }
 
 .contact form {
@@ -118,4 +113,36 @@ li:hover {
   gap: 10px;
 }
 
-/* Add more styles for header, footer, inputs, buttons, etc., for responsiveness and appearance */
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  .details {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .info {
+    order: 2;
+    text-align: center;
+  }
+  .info span {
+    display: block;
+  }
+  ul {
+    order: 1;
+    text-align: center;
+  }
+  ul li {
+    display: inline;
+    margin: 0 10px;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-size: 1.5rem;
+  }
+  .profile-image {
+    width: 30%;
+  }
+}
